@@ -1,18 +1,9 @@
-function foo(x: string | number) {
-  const one = typeof x === "string";
-  const two = one;
-  const three = two;
-  const four = three;
-  const five = four;
-  const six = five;
-  const seven = six;
-  if (one) {
-    const example: string = x;
-  }
-  if (five) {
-    const example: string = x;
-  }
-  if (six) {
-    const example: string = x;
-  }
-}
+let alpha = 'john';
+let beta = 'jane';
+
+// Don't use any new variables
+let one, two;
+[one, two] = [alpha, beta];
+
+// Test
+console.log(alpha == 'jane' && beta == 'john'); // true
